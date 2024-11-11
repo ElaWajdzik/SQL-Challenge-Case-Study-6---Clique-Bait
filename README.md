@@ -21,9 +21,9 @@ In this case study - you are required to support Danny’s vision and analyse hi
 
 ## Relationship Diagram
 
+<img src="assets/Clique Bait.png" height="400">
 
-
-This is the solution of the part A *Enterprise Relationship Diagram*
+This is the solution for Part A - Enterprise Relationship Diagram [read more](https://github.com/ElaWajdzik/SQL-Challenge-Case-Study-6---Clique-Bait/blob/main/A.%20Enterprise%20Relationship%20Diagram.md).
 
 ## Available Data
 
@@ -111,17 +111,18 @@ user_id	| cookie_id	| start_date
 
 ## Case Study Questions
 
-- [A. Enterprise Relationship Diagram](#relationship-diagram)
+- [A. Enterprise Relationship Diagram](https://github.com/ElaWajdzik/SQL-Challenge-Case-Study-6---Clique-Bait/blob/main/A.%20Enterprise%20Relationship%20Diagram.md)
 
-- [B. Digital Analysis]()
+- [B. Digital Analysis](https://github.com/ElaWajdzik/SQL-Challenge-Case-Study-6---Clique-Bait/blob/main/B.%20Digital%20Analysis.md)
 
-- [C. Product Funnel Analysis]()
+- [C. Product Funnel Analysis](https://github.com/ElaWajdzik/SQL-Challenge-Case-Study-6---Clique-Bait/blob/main/C.%20Product%20Funnel%20Analysis.md)
 
-- [D. Campaigns Analysis]()
+- [D. Campaigns Analysis](https://github.com/ElaWajdzik/SQL-Challenge-Case-Study-6---Clique-Bait/blob/main/D.%20Campaigns%20Analysis.md)
 
 
 ## SQL Skills Gained
 - 
+
 
 <br/>
 
