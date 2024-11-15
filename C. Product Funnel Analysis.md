@@ -3,20 +3,15 @@
 ## <p align="center"> C. Product Funnel Analysis
 
 ### Questions
-
-1. [The table that aggregates data for each product](#1-the-table-that-aggregates-data-for-each-product)  
-2. [The table that aggregates data for each product category](#2-the-table-that-aggregates-data-for-each-product-category)  
-3. [Additional questions](#3-additional-questions):  
-   a. [Which product had the most views cart adds and purchases](#3-1-which-product-had-the-most-views-cart-adds-and-purchases)  
-   b. [Which product was most likely to be abandoned](#3-2-which-product-was-most-likely-to-be-abandoned)  
-   c. [Which product had the highest view to purchase percentage](#3-3-which-product-had-the-highest-view-to-purchase-percentage)  
-   d. [What is the average conversion rate from view to cart add](#3-4-what-is-the-average-conversion-rate-from-view-to-cart-add)  
-   e. [What is the average conversion rate from cart add to purchase](#3-5-what-is-the-average-conversion-rate-from-cart-add-to-purchase)  
+ 
+1. [How many times was each product: viewed, added to cart, abandoned and purchased?](#1-how-many-times-was-each-product-viewed-added-to-cart-abandoned-and-purchased)
+2. [How many times was each product category: viewed, added to cart, abandoned and purchased?](#2-how-many-times-was-each-product-category-viewed-added-to-cart-abandoned-and-purchased)
+3. [Which product had the most views cart adds and purchases?](#3-which-product-had-the-most-views-cart-adds-and-purchases)  
+4. [Which product was most likely to be abandoned? Which product had the highest view to purchase percentage?](#4-which-product-was-most-likely-to-be-abandoned-which-product-had-the-highest-view-to-purchase-percentage)  
+5. [What is the average conversion rate from view to cart add? What is the average conversion rate from cart add to purchase?](#5-what-is-the-average-conversion-rate-from-view-to-cart-add-what-is-the-average-conversion-rate-from-cart-add-to-purchase)  
 
 
-
-
-#### 1. The table that aggregates data for each product.
+#### 1. How many times was each product: viewed, added to cart, abandoned and purchased?
 
 Using a single SQL query - create a new output table which has the following details:
 
@@ -80,7 +75,7 @@ ON pv.product_name = pca.product_name;
 ##### Result: 
 <img src="assets/cs6 - c1a.png">
 
-#### 2. The table that aggregates data for each product category
+#### 2. How many times was each product category: viewed, added to cart, abandoned and purchased?
 
 Additionally, create another table which further aggregates the data for the above points but this time for each product category instead of individual products.
 
@@ -131,19 +126,15 @@ The process for creating this table was very similar to the table with aggregati
 ##### Result: 
 <img src="assets/cs6 - c1b.png">
 
-#### 3. Additional questions
 
-Use your 2 new output tables - answer the following questions:
-
-#### a. Which product had the most views, cart adds and purchases?
+#### 3. Which product had the most views, cart adds and purchases?
 
 ##### Result: 
 <img src="assets/cs6 - c2.png">
 
 The shop recorded the most views for Oyster, and the most cart adds and purchases for Lobster.
 
-#### b. Which product was most likely to be abandoned?
-#### c. Which product had the highest view to purchase percentage?
+#### 4. Which product was most likely to be abandoned? Which product had the highest view to purchase percentage?
 
 ```sql
 	CAST(pca.number_of_abandoned_carts * 100.0 / pca.number_of_cart_adds AS NUMERIC(4,1)) AS abandoned_rate,
@@ -158,8 +149,7 @@ Added two columns `abandoned_rate` and `cr` to the previous table.
 More than one in four Russian Caviar items was abandoned (26.3% of all cart adds).
 The highest conversion rate (48.7%) was achieved by Lobster.
 
-#### d. What is the average conversion rate from view to cart add?
-#### e. What is the average conversion rate from cart add to purchase?
+#### 5. What is the average conversion rate from view to cart add? What is the average conversion rate from cart add to purchase?
 
 ```sql
 WITH .... --like before
