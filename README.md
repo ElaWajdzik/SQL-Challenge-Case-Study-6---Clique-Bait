@@ -121,7 +121,14 @@ user_id	| cookie_id	| start_date
 
 
 ## SQL Skills Gained
-- 
+- Aggregations - functions like `COUNT()`, `SUM()`, `AVG()` to summarize data and perform calculations over grouped records;
+- Joins - Various join types (`INNER JOIN`, `LEFT JOIN`) to combine data from multiple tables;
+- Window Functions - utilized `ROW_NUMBER()`, `DENSE_RANK()`, and `OVER()` for advanced aggregations across partitions;
+- `CASE WHEN` Statements - conditional logic for custom calculations and classifications of data;
+- Subqueries & CTEs - using `WITH` (CTE) and subqueries to create intermediate result sets for complex queries;
+- Data Transformation - Using `CAST()` to convert data types for specific calculations;
+- Grouping & Filtering - `GROUP BY` and `HAVING` clauses to aggregate data and apply conditions on grouped data;
+- Sorting - `ORDER BY` to organize results based on specific columns.
 
 
 <br/>
