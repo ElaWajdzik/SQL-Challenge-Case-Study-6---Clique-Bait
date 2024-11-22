@@ -12,6 +12,7 @@ If you are also looking for materials to improve your SQL skills you can find it
 - [Relationship Diagram](#relationship-diagram)
 - [Available Data](#available-data)
 - [Case Study Questions](#case-study-questions)
+- [SQL Skills Gained](#sql-skills-gained)
 
 
 ## Business Case
